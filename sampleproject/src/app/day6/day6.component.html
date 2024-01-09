@@ -1,0 +1,8 @@
+<h1>Reactive Page</h1>
+<div class="container">
+    <form  [formGroup]="form2" (ngSubmit)="show()">
+        <input type="text" name="uname" placeholder="Enter name" formControlName="uname"> <br>
+        <input type="text" name="uage" placeholder="Enter age" formControlName="uage"> <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>

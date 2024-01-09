@@ -1,0 +1,11 @@
+<p>sender works!</p>
+<div class="container">
+    <form #regform="ngForm" (ngSubmit)="passdata(regform.value)">
+        <input type="text" name="uname" ngModel placeholder="Enter name"> <br>
+        <input type="text" name="age" ngModel placeholder="Enter age"> <br>
+        <input type="text" name="email" ngModel placeholder="Enter email"> <br>
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
+

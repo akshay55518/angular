@@ -1,0 +1,40 @@
+<!-- <p>day4 works!</p> -->
+
+<!-- html -->
+<div class="container-fluid ">
+    <div [ngStyle]="{'color':'blue','background':'yellow'}">Welcome</div>
+</div>
+
+<!-- html-ts -->
+<div class="container">
+    <div [ngStyle]="{'color':c}">Welcome, perara</div>
+</div>
+
+<!-- html-css -->
+<div class="container-fluid ">
+    <div [ngClass]="['style','style1']">Hai , chellom</div>
+</div>
+
+<!-- html-css-ts -->
+<div class="container-fluid ">
+    <div [ngClass]="[v1,v2]">bye bye</div>
+</div>
+
+<div class="container-fluid ">
+    <hr>{{emp}}
+    <hr>{{emp|json}}
+    <hr>{{emp.id}}
+    <hr>{{emp.name|uppercase}}
+    <hr>{{emp.salary}}
+    <hr>{{emp.salary|currency}}
+    <hr>{{emp.salary|currency:'INR'}}
+    <hr>{{emp.dob}}
+    <hr>{{emp.dob|date}}
+    <hr>{{emp.dob|date:'MM dd yyyy'}}
+    <hr>{{emp.dob|date:'MMMM'}}
+    <hr>{{emp.dob|date:'MMMM'|uppercase}}
+    <hr>{{emp.name|samplepipe|uppercase}}
+
+
+    <hr>
+</div>

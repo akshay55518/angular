@@ -1,0 +1,14 @@
+<h1>Template Driven</h1>
+
+<div class="container">
+    <form action="" #form1=ngForm (ngSubmit)="regdata(form1.value)">
+        <span *ngIf="name.touched&&name.invalid">name not entered</span> <br>
+        <input type="text" name="name"  ngModel placeholder="Enter name" required #name="ngModel"> <br>
+        <span *ngIf="age.touched&&age.invalid">age not entered</span> <br>
+        <input type="text" name="age" ngModel placeholder="enter age" required #age="ngModel"> <br>
+        <span *ngIf="email.touched&&email.invalid">email not entered</span> <br>
+        <input type="text" name="email" ngModel placeholder="enter email" required #email="ngModel"> <br>
+        <!-- <input type="text" name="" id=""><br> -->
+        <input type="submit" value="submit" [disabled]="form1.invalid">
+    </form>
+</div>

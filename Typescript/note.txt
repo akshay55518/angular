@@ -1,0 +1,20 @@
+npm install -g typescript   #typescript install
+tsc --v  #typescript version
+tsc sample.ts
+node sample.js
+
+
+npm install -g @angular/cli@16.2   #install angular
+ng version   #check version
+
+ng new <projectname>
+
+ng serve  #runserver
+ng serve -o
+
+npm i bootstrap #install bootstrap
+@import '~bootstrap/dist/css/bootstrap.min.css' #inside style.css
+
+ng g c <name> #create component
+
+ng g pipe <pipename>   #create pipe
